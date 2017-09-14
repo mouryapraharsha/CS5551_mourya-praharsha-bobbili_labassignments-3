@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration-page</title>
+    <style>
+        header
+        {
+            padding: 0.5em;
+            color: white;
+            clear: left;
+            text-align: center;
+            font-size : 25px;
+        }
+    </style>
+
+</head>
+<header>
+    <h1>welcome</h1>
+</header>
+<body>
+<body style="background-image:url('http://wallzoa.com/wp-content/uploads/2013/06/solid-black-wallpaper.jpg')">
+<center>
+    <!--<h2><center><img src="https://wallpapercave.com/wp/WI3busp.jpg" style="width:880px;height:420px;"></center></h2>-->
+    <form>
+
+        <a style="color: white;">First name:</a><input type="text" name="firstname"  placeholder="enter name" size="23">
+        <br>
+        Last name:<br>
+        <a style="color: white;">Last Name:</a><input type="text" name="lastname" placeholder="enter your initial" size="23">
+        <br>
+        user name:<br>
+        <a style="color: white;">User Name:</a><input type="text" name="user name" placeholder="your choice " size="23">
+        <br>
+        password:<br>
+        <a style="color: white;">Password:</a><input type="text" name="password" placeholder=" " size="25">
+        <br>
+        Re-enter password:<br>
+        <a style="color: white;">Re-enter Password:</a><input type="text" name="Re -enter password" placeholder=" " size="17">
+        <br>
+        Mobile number:<br>
+        <a style="color: white;">Mobile Number:</a><input type="text"  placeholder="Mobile Number" size="19">
+        <br>
+        Birthday : <br>
+        <a style="color: white;">Date of Birth:</a><input id="bday" type="date" name="bday"  size="22">
+        <br><br>
+        <a style="color: white;">Gender:</a> : <select id="gender" name="gender" style="width:16%">
+        <option selected disabled>Gender</option>
+        <option>Female</option>
+        <option>Male</option>
+        <option>Other</option>
+    </select>
+        <br><br>
+        <a style="color: white;">Location:</a> : <select id="location" name="country" style="width:15%">
+        <option selected disabled>Choose here </option>
+        <option>Australia</option>
+        <option>India</option>
+        <option>Spain</option>
+        <option>Switzerland</option>
+        <option>Thailand</option>
+        <option>United Arab Emirates</option>
+        <option>United Kingdom</option>
+        <option>United States of America</option>
+
+    </select>
+        <br><br>
+        <input type="button" name="Register" value="Register" onclick="registration()">
+        <input type="button" value="Login Now" onclick="login()">
+    </form>
+</center>
+</body>

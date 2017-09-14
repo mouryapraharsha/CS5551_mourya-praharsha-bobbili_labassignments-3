@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login-page</title>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="47205741613-fvge2j82edalhq213dicpqpbqbg87tkr.apps.googleusercontent.com">
+    <script src="fblogin.js"></script>
+    <script>
+        function onSignIn(googleUser)
+        {
+            var profile = googleUser.getBasicProfile();
+            if(profile != null || profile != undefined || profile != '')
+            {
+                console.log('ID: ' + profile.getId());
+                console.log('Username: ' + profile.getName());
+                console.log('Image URL: ' + profile.getImageUrl());
+                console.log('Email: ' + profile.getEmail());
+            }
+            else
+            {
+                alert('Google Sign In Failed!');
+            }
+
+        }
+    </script>
+
+</head>
+<body>
+<body style="background-image:url('https://www.wallpapersbrowse.com/images/ti/tikdjew.jpg')">
+<div align="center" style="padding-top: 20px">
+    <br>
+    <br>
+    <center><p class="form-title"><div class="container"><h2><img src="https://www.vanartgallery.bc.ca/the_exhibitions/images/mashup_wm.jpg" style="width:400px;height:108px";></h2></div>
+        </p></center>
+    <input type="text" id="username" placeholder="UserName" align="vertical"/><br/>
+    <br/>
+    <input type="password" id="password" placeholder="Password"/><br/>
+    <br/>
+    <br/>
+    <input type="button" id="login" value="Login" align="center" onclick="login()"/>
+    <br>
+    <br>
+    <div>
+        <label>Don't have an account ?</label>
+        <a style="color:black; font-weight: bold" href="reg.html">Signup-Here</a>
+        <br/><br>
+        <div class="g-signin2" data-size="xlarge" data-onsuccess="onSignIn"></div>
+
+        <br>
+        <div class="fb-login-button" data-max-rows="7" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
+
+    </div>
+</div>
+</body>
+</body>
+</html>
